@@ -29,8 +29,8 @@
       task: ""
     }
 
-    $scope.add = function() {
-      $scope.all.push({
+    $scope.addTodo = function() {
+      $scope.allTodos.push({
         id: $scope.ids,
         task: $scope.newTodo.task,
         completed: false
