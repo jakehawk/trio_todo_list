@@ -21,7 +21,7 @@
 
 
 		<ul>
-			<li ng-repeat="todo in allTodos">
+			<li ng-repeat="todo in allTodos" ng-class="{'completed': todo.completed}" ng-click="completed(todo)">
 				{{todo.task}}
 			</li>
 		</ul>
