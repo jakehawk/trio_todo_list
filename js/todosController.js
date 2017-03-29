@@ -2,9 +2,9 @@
   `use strict`
 
   angular.module(`todosApp`)
-    .controller(`TodosApp`, TodosApp)
+    .controller(`TodosController`, TodosController)
 
-  function TodosApp($scope) {
+  function TodosController($scope) {
   	$scope.allTodos = [
   		{
   			id 					: 0,
