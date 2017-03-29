@@ -1,7 +1,7 @@
 (function() {
   `use strict`
 
-  angular.module(`todoApp`)
+  angular.module(`todosApp`)
     .controller(`TodosApp`, TodosApp)
 
   function TodosApp($scope) {
