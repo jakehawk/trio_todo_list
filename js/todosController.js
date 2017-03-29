@@ -39,6 +39,14 @@
       $scope.newTodo.task = ""
     }
 
+    $scope.completed = function(completedTodo) {
+    	for (var i = 0; i < $scope.allTodos.length; i++) {
+    		if ($scope.allTodos[i].id === completedTodo.id) {
+    			$scope.allTodos[i].completed = !$scope.allTodos[i].completed;
+    		}
+    	}
+    }
+
   }
 
 }())
