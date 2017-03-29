@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body ng-controller="TodosController">
-		<h1>You have {{allTodos.length}} todos left!</h1>
+		<h1>You have <span ng-bind="todosLeft()"></span> todos left!</h1>
 
     <form class="form-inline" id="add-todo" ng-submit="addTodo()">
       <label class="sr-only" for="newTodo.task">Task</label>
