@@ -22,6 +22,23 @@
   			completed		: false
   		}
   	]
+
+
+    $scope.ids = 3
+    $scope.newTodo = {
+      task: ""
+    }
+
+    $scope.add = function() {
+      $scope.all.push({
+        id: $scope.ids,
+        task: $scope.newTodo.task,
+        completed: false
+      })
+      $scope.ids++
+      $scope.newTodo.task = ""
+    }
+
   }
 
 }())
