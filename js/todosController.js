@@ -47,6 +47,12 @@
     	}
     }
 
+    $scope.todosLeft = function() {
+      return $scope.allTodos.filter(function(todo) {
+        return !todo.completed
+      }).length
+    }
+
   }
 
 }())
